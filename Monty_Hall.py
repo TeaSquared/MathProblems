@@ -132,7 +132,6 @@ def handleMouseDown(obj, event):
     if switchBox.hit(event.x,event.y):
             print("Switch")
             #print(puerta.name)
-            #THE PROBLEM IS THAT THE DOOR IS NOT DEFINED AS PUERTA, TELL WHICH DOOR TO SET BLACK AND WHICH TO REMOVE
             for aDoorE in listOfDoorEnsembles:
                 if aDoorE.status == "Chosen":
                     doorToDeselect = aDoorE
